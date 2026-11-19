@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Valley Dental - Cheerful Family & Pediatric Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="back-link">&larr; Back to Portal</a>
+      <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M12 2C8.5 2 6 4.5 6 8c0 4 3 6.5 4.5 9 .5.8.5 1.5.5 2 0 1.1.9 2 2 2s2-.9 2-2c0-.5 0-1.2.5-2 1.5-2.5 4.5-5 4.5-9 0-3.5-2.5-6-6-6z"/>
+          <circle cx="12" cy="8" r="3"/>
+          <path d="M12 2v2M12 18v2M6 12H4M20 12h-2M7.75 7.75L6.34 6.34M17.66 17.66l-1.41-1.41M17.66 6.34l-1.41 1.41M7.75 16.25l-1.41 1.41"/>
+        </svg>
+        <span>Sunny Valley Dental</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#kids-corner">Kids Corner</a>
+        <a href="#booking-section">Book Visit</a>
+      </nav>
+      <a href="#booking-section" class="btn btn-orange">Schedule Visit</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="orange-sub">WELCOME TO YOUR NEW DENTAL HOME</span>
+        <h1>Your Family's Home for <span class="highlight">Cheerful, Caring Smiles</span></h1>
+        <p class="hero-desc">We make going to the dentist fun and stress-free for both kids and parents. Experience warm care, digital pain-free treatments, and a staff that treats you like family!</p>
+        <div class="hero-actions">
+          <a href="#booking-section" class="btn btn-orange btn-large">Book Your First Visit</a>
+          <a href="#kids-corner" class="btn btn-blue btn-large">Kids Corner</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="blob-bg"></div>
+        <div class="image-frame">
+          <img src="../assets/sunny-mockup.jpg" alt="Happy family at Sunny Valley Dental">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <span class="orange-sub">SERVICES FOR ALL AGES</span>
+        <h2>How We Care For Your Family</h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <section class="service-card">
+          <div class="card-icon icon-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+          </div>
+          <h3>Pediatric Care</h3>
+          <p>Gentle cleanings, cavity prevention, and positive dental habits created in a fun environment filled with stickers, toys, and cartoons.</p>
+        </section>
+
+        <!-- Service Card 2 -->
+        <section class="service-card">
+          <div class="card-icon icon-orange">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4m5 .5A10 10 0 1111.3 2c3.4-.5 7.2.8 9.8 3.4 2.6 2.6 3.9 6.4 3.4 9.8z"/>
+            </svg>
+          </div>
+          <h3>Preventative Care</h3>
+          <p>Regular checkups, dental cleanings, fluoride shield therapies, and digital diagnostic scans to keep your family smiling bright.</p>
+        </section>
+
+        <!-- Service Card 3 -->
+        <section class="service-card">
+          <div class="card-icon icon-red">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Emergency Dental</h3>
+          <p>Chipped tooth on the playground? Sudden toothache? We offer same-day emergency slots to get your kids pain-free quickly.</p>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Carousel Section -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="orange-sub">HEAR FROM OUR HAPPY FAMILIES</span>
+        <h2>What Our Patients Say</h2>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <div class="review-card">
+              <div class="rating">★★★★★</div>
+              <p class="review-text">"Dr. Amy and the team are fantastic with my kids! My 6-year-old was actually excited to go back for his cleaning. Highly recommend!"</p>
+              <div class="reviewer">
+                <div class="reviewer-avatar av-1">SJ</div>
+                <div>
+                  <h4>Sarah J.</h4>
+                  <span>Mom of two</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="review-card">
+              <div class="rating">★★★★★</div>
+              <p class="review-text">"Super clean office, warm staff, and absolutely zero pain during my filling procedure. Best dentist experience in Sunny Valley!"</p>
+              <div class="reviewer">
+                <div class="reviewer-avatar av-2">MP</div>
+                <div>
+                  <h4>Mike P.</h4>
+                  <span>Patient for 3 years</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="review-card">
+              <div class="rating">★★★★★</div>
+              <p class="review-text">"Excellent preventative care and state-of-the-art kid rooms. They explained everything clearly and the billing was completely transparent."</p>
+              <div class="reviewer">
+                <div class="reviewer-avatar av-3">RJ</div>
+                <div>
+                  <h4>Ralf J.</h4>
+                  <span>Family Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Navigation -->
+        <div class="carousel-nav">
+          <button class="nav-btn prev-btn" id="prevBtn">&larr;</button>
+          <div class="carousel-indicators" id="indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+          <button class="nav-btn next-btn" id="nextBtn">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kids Corner (Interactive Dental Quiz) -->
+  <section id="kids-corner" class="kids-corner">
+    <div class="container kids-grid">
+      <div class="quiz-visuals">
+        <!-- SVG of a happy smiling tooth character -->
+        <svg class="happy-tooth" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20,30 C20,10 40,10 50,25 C60,10 80,10 80,30 C80,60 70,85 55,90 C52,91 48,91 45,90 C30,85 20,60 20,30 Z" fill="#FFF" stroke="#0ea5e9" stroke-width="4"/>
+          <!-- Cheeks -->
+          <circle cx="32" cy="45" r="5" fill="#FFA07A" opacity="0.6"/>
+          <circle cx="68" cy="45" r="5" fill="#FFA07A" opacity="0.6"/>
+          <!-- Eyes -->
+          <circle cx="40" cy="40" r="4" fill="#0c4a6e"/>
+          <circle cx="60" cy="40" r="4" fill="#0c4a6e"/>
+          <circle cx="42" cy="38" r="1.5" fill="#FFF"/>
+          <circle cx="62" cy="38" r="1.5" fill="#FFF"/>
+          <!-- Smile -->
+          <path d="M42,50 Q50,60 58,50" stroke="#0c4a6e" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- Sparkles -->
+          <path d="M85,20 L87,25 L92,27 L87,29 L85,34 L83,29 L78,27 L83,25 Z" fill="#f59e0b"/>
+          <path d="M12,50 L14,53 L17,54 L14,55 L12,58 L10,55 L7,54 L10,53 Z" fill="#f59e0b"/>
+        </svg>
+      </div>
+      <div class="quiz-card">
+        <span class="quiz-badge">🌟 FUN DENTAL TRIVIA</span>
+        <h2>Brush Up Your Knowledge!</h2>
+        <p class="quiz-question" id="quizQuestion">How many times a day should you brush your teeth?</p>
+        
+        <div class="quiz-options" id="quizOptions">
+          <button class="quiz-opt" data-correct="false">Only on your birthday!</button>
+          <button class="quiz-opt" data-correct="true">2 times (Morning & Night) 🌟</button>
+          <button class="quiz-opt" data-correct="false">1 time every week</button>
+        </div>
+
+        <div class="quiz-feedback" id="quizFeedback">
+          <p class="feedback-text"></p>
+          <button class="btn btn-blue" id="nextQuizBtn" style="display:none;">Next Question</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Section (Inline form) -->
+  <section id="booking-section" class="booking">
+    <div class="container booking-container">
+      <div class="booking-text">
+        <h2>Book Your Cheerful Visit Today!</h2>
+        <p>Fill out our simple form to pick a slot, and we'll welcome you with open arms and a warm smile.</p>
+        <div class="booking-guarantees">
+          <span>✔ Kid-Friendly Rooms</span>
+          <span>✔ Interactive Toys & Games</span>
+          <span>✔ Transparent Pricing</span>
+        </div>
+      </div>
+      <div class="booking-card">
+        <form id="inlineBookingForm" class="booking-form">
+          <div class="form-group">
+            <label for="pName">Parent Name</label>
+            <input type="text" id="pName" placeholder="Emily Smith" required>
+          </div>
+          <div class="form-group">
+            <label for="pEmail">Email Address</label>
+            <input type="email" id="pEmail" placeholder="emily@example.com" required>
+          </div>
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="kidCount">Number of Children</label>
+              <select id="kidCount" required>
+                <option value="0">Just Adults</option>
+                <option value="1">1 Child</option>
+                <option value="2">2 Children</option>
+                <option value="3">3+ Children</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="visitDate">Preferred Date</label>
+              <input type="date" id="visitDate" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-orange submit-btn">Request Booking &rarr;</button>
+        </form>
+
+        <div class="inline-success" id="inlineSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Booking Request Sent!</h3>
+          <p>We've received your request, <span id="confirmParent">Emily</span>. We will call or email you soon to finalize your visit date!</p>
+          <button class="btn btn-orange" id="resetBookingBtn">Book Another</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <h3>Sunny Valley Dental</h3>
+        <p>Creating bright, joyful, and healthy smiles for families across the valley.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Clinic Location</h4>
+        <p>📍 456 Sunshine Blvd, Sunny Valley</p>
+        <p>📞 +1 (555) SUN-VALY</p>
+        <p>✉️ smile@sunnyvalleydental.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sunny Valley Dental. Crafted for family smiles.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

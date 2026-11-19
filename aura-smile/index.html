@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Smile Studio - Luxury Cosmetic Dentistry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Global glow accents -->
+  <div class="glow-point"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="back-link">&larr; Back to Portal</a>
+      <div class="logo">
+        <span class="logo-initials">AS</span>
+        <span class="logo-text">Aura Smile Studio</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#services">Our Services</a>
+        <a href="#gallery">Smile Gallery</a>
+        <a href="#about">The Studio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-gold btn-consult">Request VIP Consultation</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="gold-sub">COSMETIC & RESTORATIVE MASTERY</span>
+        <h1>Revolutionize Your Smile.<br><span class="italic-serif">Experience Pure Radiance.</span></h1>
+        <p class="hero-desc">Aura Smile Studio offers exclusive, state-of-the-art cosmetic dentistry in a luxurious sanctuary. We craft bespoke smiles that enhance your natural beauty and elevate your confidence.</p>
+        <div class="hero-actions">
+          <button class="btn btn-gold btn-consult">Request VIP Consultation</button>
+          <a href="#gallery" class="btn btn-outline-gold">View Gallery</a>
+        </div>
+      </div>
+      <div class="hero-image-frame">
+        <div class="image-border"></div>
+        <div class="image-container">
+          <img src="../assets/aura-mockup.jpg" alt="Aura Smile Studio Consultation">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <span class="gold-sub">THE SIGNATURE COLLECTION</span>
+        <h2>Bespoke Treatments</h2>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+              <path d="M12 6v12M6 12h12"/>
+            </svg>
+          </div>
+          <h3>Porcelain Veneers</h3>
+          <p>Hand-crafted, ultra-thin porcelain shells designed to transform color, shape, alignment, and spacing into an art form.</p>
+          <a href="#" class="service-link btn-consult">Explore &rarr;</a>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3>Premium Implants</h3>
+          <p>Advanced restorative implants that mimic natural tooth roots, providing long-term structural integrity and seamless aesthetics.</p>
+          <a href="#" class="service-link btn-consult">Explore &rarr;</a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3v18M3 12h18"/>
+              <circle cx="12" cy="12" r="9"/>
+            </svg>
+          </div>
+          <h3>Teeth Whitening</h3>
+          <p>Exclusive whitening therapies engineered to lift deep stains and brighten your smile up to 8 shades in a single luxurious visit.</p>
+          <a href="#" class="service-link btn-consult">Explore &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Gallery (Before/After Slider) -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="section-title text-center">
+        <span class="gold-sub">TRANSFORMATION PREVIEWS</span>
+        <h2>Smile Gallery</h2>
+        <p class="section-desc">Drag the slider below to witness the seamless restorative results achieved at our studio.</p>
+      </div>
+
+      <!-- Before/After Slider Component -->
+      <div class="slider-wrapper">
+        <div class="before-after-container">
+          <!-- Before Image (Base) -->
+          <div class="image-before">
+            <div class="teeth-graphic yellowish">
+              <!-- SVG Representing stylized unaligned/yellowed teeth -->
+              <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Gum -->
+                <path d="M10 50C100 20 300 20 390 50V100C300 80 100 80 10 100V50Z" fill="#e57373" opacity="0.8"/>
+                <!-- Yellowish Teeth -->
+                <rect x="50" y="80" width="40" height="60" rx="10" fill="#FFE082" stroke="#BCAAA4" stroke-width="3"/>
+                <rect x="95" y="82" width="45" height="70" rx="10" fill="#FFE082" stroke="#BCAAA4" stroke-width="3"/>
+                <rect x="145" y="85" width="50" height="75" rx="10" fill="#FFE082" stroke="#BCAAA4" stroke-width="3"/>
+                <rect x="205" y="85" width="50" height="75" rx="10" fill="#FFECB3" stroke="#BCAAA4" stroke-width="3"/>
+                <rect x="260" y="82" width="45" height="70" rx="10" fill="#FFE082" stroke="#BCAAA4" stroke-width="3"/>
+                <rect x="310" y="80" width="40" height="60" rx="10" fill="#FFE082" stroke="#BCAAA4" stroke-width="3"/>
+                <!-- Dark Overlay or Gap for "before" look -->
+                <line x1="145" y1="85" x2="145" y2="160" stroke="#8D6E63" stroke-width="4"/>
+                <line x1="257" y1="82" x2="257" y2="152" stroke="#8D6E63" stroke-width="4"/>
+              </svg>
+              <div class="label-tag tag-before">BEFORE TREATMENT</div>
+            </div>
+          </div>
+
+          <!-- After Image (Overlay, width clipped) -->
+          <div class="image-after" id="afterImage">
+            <div class="teeth-graphic white-bright">
+              <!-- SVG Representing perfect straight white teeth -->
+              <svg viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Gum -->
+                <path d="M10 50C100 20 300 20 390 50V100C300 80 100 80 10 100V50Z" fill="#ff8a80"/>
+                <!-- Perfect White Teeth -->
+                <rect x="50" y="80" width="42" height="65" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+                <rect x="96" y="82" width="46" height="72" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+                <rect x="146" y="84" width="51" height="76" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+                <rect x="201" y="84" width="51" height="76" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+                <rect x="256" y="82" width="46" height="72" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+                <rect x="306" y="80" width="42" height="65" rx="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+              </svg>
+              <div class="label-tag tag-after">AFTER CLINICAL ARTISTRY</div>
+            </div>
+          </div>
+
+          <!-- Slide bar and handle -->
+          <div class="slider-handle" id="sliderHandle">
+            <div class="handle-line"></div>
+            <div class="handle-button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/>
+              </svg>
+            </div>
+            <div class="handle-line"></div>
+          </div>
+          
+          <!-- Invisible range input covering the area -->
+          <input type="range" min="0" max="100" value="50" class="slider-input" id="sliderRange">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Studio Section -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="gold-sub">THE STUDIO EXPERIENCE</span>
+        <h2>A Sanctuary of Care</h2>
+        <p>Aura Smile Studio is designed to make you forget you are at the dentist. From our aromatherapy lounges to noise-canceling headsets, cozy cashmeres, and high-fidelity video ceilings, we cater to your senses while restoring your smile.</p>
+        <p class="quote">"Our mission is to merge medical science with high-fashion aesthetic standards. We believe a smile is the ultimate accessory." <span class="author">&mdash; Dr. Evelyn Vane, Founder</span></p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-number">1-on-1</span>
+          <span class="stat-lbl">Personalized Attention</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-lbl">Bespoke Porcelains</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Contact -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h2>Aura Smile Studio</h2>
+        <p>Crafting masterpieces, one smile at a time.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Navigation</h4>
+        <a href="#services">Services</a>
+        <a href="#gallery">Smile Gallery</a>
+        <a href="#about">The Studio</a>
+        <a href="#" class="btn-consult">VIP Request</a>
+      </div>
+      <div class="footer-info">
+        <h4>Studio Details</h4>
+        <p>📍 78 Avenue Montaigne, Level 4</p>
+        <p>📞 +1 (800) Aura-Smile</p>
+        <p>✉️ concierge@aurasmilestudio.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aura Smile Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- VIP consultation modal -->
+  <div class="modal-overlay" id="consultModal">
+    <div class="modal-card">
+      <button class="modal-close">&times;</button>
+      <div class="modal-header">
+        <h3>VIP Consultation Request</h3>
+        <p>We are delighted to welcome you. Complete this request, and our private concierge will contact you within 24 hours.</p>
+      </div>
+      <form id="consultForm" class="modal-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="vipName" required placeholder="Evelyn Carter">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" id="vipPhone" required placeholder="+1 (555) 000-1122">
+        </div>
+        <div class="form-group">
+          <label>Desired Enhancements</label>
+          <select id="vipService" required>
+            <option value="">Select Treatment...</option>
+            <option value="veneers">Porcelain Veneers Design</option>
+            <option value="implants">Full Mouth Restoration</option>
+            <option value="whitening">Laser Whitening Spa Session</option>
+            <option value="full">Comprehensive Consultation</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block">Submit VIP Request</button>
+      </form>
+      <div class="success-screen" id="vipSuccess">
+        <div class="success-icon">&#10003;</div>
+        <h3>Bespoke Request Saved</h3>
+        <p>Thank you, <span id="vipConfirmName">Client</span>. Our private concierge will call you on <strong id="vipConfirmPhone">phone</strong> shortly to arrange your custom experience.</p>
+        <button class="btn btn-outline-gold close-success-btn">Return to Studio</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

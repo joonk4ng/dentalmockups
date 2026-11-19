@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrthoLens 3D — Medical & Dental Mesh Inspector</title>
+  
+  <meta name="description" content="Lightweight in-browser 3D STL & OBJ mesh viewer for medical and dental surface scanning. Features point-to-point digital caliper, cross-sectional clipping, and topology analytics.">
+  <meta name="author" content="Joon Kang">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top App Navigation -->
+  <header class="app-header">
+    <div class="brand-wrapper">
+      <a href="../index.html" class="back-portfolio-link">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Portfolio</span>
+      </a>
+
+      <div class="brand-title-group">
+        <span class="brand-title">OrthoLens 3D</span>
+        <span class="brand-tag">Bioinformatics & CAD</span>
+      </div>
+    </div>
+
+    <!-- Center Model Controls -->
+    <div class="header-center">
+      <div class="model-select-wrapper">
+        <select class="model-select-dropdown" id="modelSelect" aria-label="Select 3D Model">
+          <option value="molar">Mandibular Molar (Tooth #19)</option>
+          <option value="arch">Full Dental Arch Scan</option>
+          <option value="aligner">Clear Orthodontic Aligner</option>
+        </select>
+      </div>
+
+      <label class="btn-upload-file">
+        <i class="fa-solid fa-upload"></i>
+        <span>Load STL / OBJ</span>
+        <input type="file" id="fileUploadInput" accept=".stl,.obj" aria-label="Upload custom STL or OBJ file">
+      </label>
+    </div>
+
+    <!-- Right Header Actions -->
+    <div class="header-actions">
+      <button class="icon-action-btn" id="snapshotBtn" title="Export PNG Snapshot" aria-label="Export PNG Snapshot">
+        <i class="fa-solid fa-camera"></i>
+      </button>
+      <button class="icon-action-btn" id="resetViewBtn" title="Reset Camera View" aria-label="Reset Camera View">
+        <i class="fa-solid fa-arrows-to-dot"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Left Tools Palette -->
+  <div class="left-tools-palette">
+    <button class="tool-palette-btn active" data-tool="orbit" data-tooltip="Rotate & Pan" aria-label="Orbit Tool">
+      <i class="fa-solid fa-arrows-rotate"></i>
+    </button>
+
+    <button class="tool-palette-btn" data-tool="caliper" data-tooltip="3D Caliper (Measure mm)" aria-label="Caliper Tool">
+      <i class="fa-solid fa-ruler"></i>
+    </button>
+
+    <div class="tool-divider"></div>
+
+    <button class="tool-palette-btn" id="quickResetBtn" data-tooltip="Fit to View" aria-label="Fit View" onclick="viewerInstance.resetView()">
+      <i class="fa-solid fa-compress"></i>
+    </button>
+  </div>
+
+  <!-- Right Inspector Panel -->
+  <aside class="right-inspector-panel">
+    
+    <!-- Shading Modes -->
+    <div class="inspector-section">
+      <div class="inspector-title">
+        <span>Shading & Surface</span>
+        <i class="fa-solid fa-palette"></i>
+      </div>
+      <div class="shading-grid">
+        <button class="shading-btn active" data-shading="enamel">
+          <i class="fa-solid fa-circle"></i> Enamel
+        </button>
+        <button class="shading-btn" data-shading="normal">
+          <i class="fa-solid fa-compass-drafting"></i> Normals
+        </button>
+        <button class="shading-btn" data-shading="xray">
+          <i class="fa-solid fa-eye"></i> X-Ray
+        </button>
+        <button class="shading-btn" data-shading="wireframe">
+          <i class="fa-solid fa-border-all"></i> Wireframe
+        </button>
+      </div>
+    </div>
+
+    <!-- Digital Caliper Measurements -->
+    <div class="inspector-section">
+      <div class="inspector-title">
+        <span>3D Caliper</span>
+        <button id="clearMeasurementsBtn" style="background: none; border: none; color: var(--accent-rose); font-size: 0.75rem; cursor: pointer;">Clear</button>
+      </div>
+      <div class="measurements-container">
+        <p class="measurement-instruction">
+          Activate caliper on the left toolbar and click any two surface vertices to compute 3D Euclidean distance.
+        </p>
+        <div class="measurements-history" id="measurementHistory">
+          <!-- Populated as user measures -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Cross-Section Slice Plane -->
+    <div class="inspector-section">
+      <div class="inspector-title">
+        <span>Cross-Section Plane</span>
+        <i class="fa-solid fa-scissors"></i>
+      </div>
+      <div class="toggle-row" style="margin-bottom: 0.5rem;">
+        <span>Enable Clipping</span>
+        <input type="checkbox" id="clipToggle">
+      </div>
+      <div class="control-slider-group">
+        <div class="slider-label-row">
+          <span>Slice Height (Y)</span>
+          <span class="slider-label-val" id="clipValLabel">10 mm</span>
+        </div>
+        <input type="range" id="clipSlider" min="-15" max="15" step="0.5" value="10">
+      </div>
+    </div>
+
+    <!-- Mesh Topology Statistics -->
+    <div class="inspector-section">
+      <div class="inspector-title">
+        <span>Mesh Analytics</span>
+        <i class="fa-solid fa-chart-simple"></i>
+      </div>
+      <div class="stats-list">
+        <div class="stats-row">
+          <span class="stats-label">Vertices</span>
+          <span class="stats-val" id="statVertices">–</span>
+        </div>
+        <div class="stats-row">
+          <span class="stats-label">Triangles</span>
+          <span class="stats-val" id="statTriangles">–</span>
+        </div>
+        <div class="stats-row">
+          <span class="stats-label">Bounding Box</span>
+          <span class="stats-val" id="statDimensions">–</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- View Helpers -->
+    <div class="inspector-section">
+      <div class="inspector-title">
+        <span>Environment Helpers</span>
+      </div>
+      <div class="toggle-row">
+        <span>Ground Grid</span>
+        <input type="checkbox" id="gridToggle" checked>
+      </div>
+      <div class="toggle-row">
+        <span>Coordinate Axes</span>
+        <input type="checkbox" id="axesToggle" checked>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- 3D Canvas Host -->
+  <div id="viewportContainer"></div>
+
+  <!-- Toast Alert -->
+  <div class="viewer-toast" id="viewerToast" role="status"></div>
+
+  <!-- Three.js and Dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/utils/BufferGeometryUtils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+
+  <!-- Viewer Logic -->
+  <script src="viewer.js"></script>
+</body>
+</html>

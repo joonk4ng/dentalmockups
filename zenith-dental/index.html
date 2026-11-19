@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith Dental - Serene & Modern Dental Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="back-link">&larr; Back to Portal</a>
+      <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2C8.5 2 6 4.5 6 8c0 4 3 6.5 4.5 9 .5.8.5 1.5.5 2 0 1.1.9 2 2 2s2-.9 2-2c0-.5 0-1.2.5-2 1.5-2.5 4.5-5 4.5-9 0-3.5-2.5-6-6-6z"/>
+          <path d="M9 8h6"/>
+        </svg>
+        <span>Zenith Dental</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-primary btn-book">Book an Appointment &rarr;</button>
+      <button class="mobile-menu-btn" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="hero-tag">Compassionate Care in a Serene Environment</div>
+        <h1>Welcome to<br><span class="highlight">Zenith Dental</span></h1>
+        <p class="hero-desc">Your journey to a brighter, healthier smile begins here. We combine state-of-the-art technology with a gentle, patient-first approach to redefine your dental experience.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-large btn-book">Book an Appointment</button>
+          <a href="#services" class="btn btn-secondary btn-large">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-image-container">
+        <div class="image-wrapper">
+          <img src="../assets/zenith-mockup.jpg" alt="Zenith Dental Office Lobby">
+        </div>
+        <div class="experience-card">
+          <div class="exp-number">15+</div>
+          <div class="exp-text">Years of Beautiful Smiles</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="subheading">OUR SERVICES</span>
+        <h2>Comprehensive Care for Every Smile</h2>
+        <p>Explore our range of specialized dental treatments designed to meet your individual needs.</p>
+      </div>
+
+      <!-- Services Grid / Interactive Switcher -->
+      <div class="services-interactive">
+        <div class="services-tabs">
+          <button class="tab-btn active" data-tab="preventive">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>Preventive Care</span>
+          </button>
+          <button class="tab-btn" data-tab="cosmetic">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            <span>Cosmetic Dentistry</span>
+          </button>
+          <button class="tab-btn" data-tab="restorative">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            <span>Restorative Care</span>
+          </button>
+          <button class="tab-btn" data-tab="orthodontics">
+            <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M8 12h8M12 8v8"/>
+            </svg>
+            <span>Orthodontics</span>
+          </button>
+        </div>
+
+        <div class="services-content-panel">
+          <!-- Tab content: Preventive -->
+          <div class="tab-pane active" id="tab-preventive">
+            <div class="tab-pane-grid">
+              <div class="pane-text">
+                <h3>Preventive Dental Care</h3>
+                <p class="pane-intro">Keeping your teeth healthy is our top priority. Our preventative treatments safeguard your oral health and catch potential issues before they develop.</p>
+                <ul class="pane-list">
+                  <li><strong>Routine Cleanings:</strong> Gentle, thorough scale and cleans by certified hygienists.</li>
+                  <li><strong>Digital X-Rays:</strong> Advanced low-radiation imaging to detect hidden decay.</li>
+                  <li><strong>Fluoride Therapy:</strong> Hardens enamel and protects against cavities.</li>
+                  <li><strong>Sealants:</strong> Invisible coatings that guard vulnerable chewing surfaces.</li>
+                </ul>
+                <button class="btn btn-outline btn-book">Schedule a Cleaning</button>
+              </div>
+              <div class="pane-deco">
+                <div class="deco-circle circle-teal">
+                  <svg class="deco-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab content: Cosmetic -->
+          <div class="tab-pane" id="tab-cosmetic">
+            <div class="tab-pane-grid">
+              <div class="pane-text">
+                <h3>Cosmetic Smile Enhancements</h3>
+                <p class="pane-intro">Discover the confidence of a flawless smile. We offer personalized cosmetic procedures that transform your teeth into their most radiant form.</p>
+                <ul class="pane-list">
+                  <li><strong>Teeth Whitening:</strong> Zoom in-chair whitening for instant dramatic results.</li>
+                  <li><strong>Porcelain Veneers:</strong> Custom-made shell facings for a perfect smile line.</li>
+                  <li><strong>Invisalign Aligners:</strong> Clear, removable aligners to straighten teeth discreetly.</li>
+                  <li><strong>Composite Bonding:</strong> Quick chips and gaps correction.</li>
+                </ul>
+                <button class="btn btn-outline btn-book">Consult with a Specialist</button>
+              </div>
+              <div class="pane-deco">
+                <div class="deco-circle circle-mint">
+                  <svg class="deco-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab content: Restorative -->
+          <div class="tab-pane" id="tab-restorative">
+            <div class="tab-pane-grid">
+              <div class="pane-text">
+                <h3>Restorative Treatment Options</h3>
+                <p class="pane-intro">Restore strength, function, and comfort to damaged teeth. Our restorations look entirely natural and are built to last.</p>
+                <ul class="pane-list">
+                  <li><strong>Dental Crowns:</strong> Full-coverage caps protecting weakened teeth.</li>
+                  <li><strong>Implants:</strong> Root replacements that anchor permanent crowns or bridges.</li>
+                  <li><strong>Composite Fillings:</strong> Invisible mercury-free composite tooth fillings.</li>
+                  <li><strong>Root Canal Therapy:</strong> Gentle, painless treatments to save infected teeth.</li>
+                </ul>
+                <button class="btn btn-outline btn-book">Book a Consultation</button>
+              </div>
+              <div class="pane-deco">
+                <div class="deco-circle circle-blue">
+                  <svg class="deco-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab content: Orthodontics -->
+          <div class="tab-pane" id="tab-orthodontics">
+            <div class="tab-pane-grid">
+              <div class="pane-text">
+                <h3>Orthodontic Orthopedics</h3>
+                <p class="pane-intro">Achieve straight teeth and a well-aligned bite. We provide modern solutions tailored to teenagers and adults alike.</p>
+                <ul class="pane-list">
+                  <li><strong>Invisalign Clear Aligners:</strong> Comfortable, clear orthodontic trays.</li>
+                  <li><strong>Ceramic Braces:</strong> Low-visibility tooth-colored brackets.</li>
+                  <li><strong>Traditional Braces:</strong> Highly effective metal wire braces for complex cases.</li>
+                  <li><strong>Retainers:</strong> Custom appliances to maintain your alignment permanently.</li>
+                </ul>
+                <button class="btn btn-outline btn-book">Book Ortho Consult</button>
+              </div>
+              <div class="pane-deco">
+                <div class="deco-circle circle-teal-deep">
+                  <svg class="deco-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M8 12h8M12 8v8"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-deco-box">
+        <div class="feature-card">
+          <h4>State-of-the-Art Technology</h4>
+          <p>We use intraoral cameras, 3D imaging, and digital impressions to make your visits faster and more comfortable.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Comfort First</h4>
+          <p>Enjoy ceiling-mounted TVs, cozy blankets, noise-canceling headphones, and sedation options if needed.</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="subheading">ABOUT US</span>
+        <h2>Redefining the Dental Experience</h2>
+        <p>At Zenith Dental, we believe dental visits should be relaxing, transparent, and patient-centered. Our team is dedicated to listening to your concerns and designing tailored care pathways that put your comfort first.</p>
+        <div class="stats-row">
+          <div class="stat-item">
+            <h3>99%</h3>
+            <p>Satisfaction Rate</p>
+          </div>
+          <div class="stat-item">
+            <h3>10k+</h3>
+            <p>Happy Patients</p>
+          </div>
+          <div class="stat-item">
+            <h3>0%</h3>
+            <p>Judgment Policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-info">
+        <div class="logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C8.5 2 6 4.5 6 8c0 4 3 6.5 4.5 9 .5.8.5 1.5.5 2 0 1.1.9 2 2 2s2-.9 2-2c0-.5 0-1.2.5-2 1.5-2.5 4.5-5 4.5-9 0-3.5-2.5-6-6-6z"/>
+            <path d="M9 8h6"/>
+          </svg>
+          <span>Zenith Dental</span>
+        </div>
+        <p>A tranquil environment for premium dental services, tailored to support and protect your smile.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Practice Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About us</a>
+        <button class="footer-btn btn-book">Book Now</button>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Details</h4>
+        <p>📍 123 Tranquil Way, Suite 100</p>
+        <p>📞 +1 (555) 123-4567</p>
+        <p>✉️ hello@zenithdental.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zenith Dental. Built with care.</p>
+    </div>
+  </footer>
+
+  <!-- Appointment Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close Booking Modal">&times;</button>
+      <div class="modal-header">
+        <h3>Request an Appointment</h3>
+        <p>Provide your preference details below, and our team will reach out to confirm your spot.</p>
+      </div>
+      <form id="bookingForm" class="modal-form">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="emailAddr">Email Address</label>
+          <input type="email" id="emailAddr" required placeholder="john@example.com">
+        </div>
+        <div class="form-group-row">
+          <div class="form-group">
+            <label for="dentalService">Service Needed</label>
+            <select id="dentalService" required>
+              <option value="">Select Service...</option>
+              <option value="preventive">Preventive Dental Checkup</option>
+              <option value="cosmetic">Cosmetic / Whitening</option>
+              <option value="restorative">Tooth Restoration / Crowns</option>
+              <option value="orthodontics">Invisalign & Braces</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="apptDate">Preferred Date</label>
+            <input type="date" id="apptDate" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="apptTime">Preferred Time</label>
+          <select id="apptTime" required>
+            <option value="">Select Time Window...</option>
+            <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+            <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+            <option value="late">Late Day (4:00 PM - 6:00 PM)</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">Confirm Request</button>
+      </form>
+      
+      <!-- Success Screen -->
+      <div class="success-screen" id="successScreen">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <h3>Request Received!</h3>
+        <p>Thank you, <span id="successName">Name</span>. We will review your request for <strong id="successService">Service</strong> on <strong id="successDate">Date</strong> and email you details shortly.</p>
+        <button type="button" class="btn btn-primary close-success-btn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
