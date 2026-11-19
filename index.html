@@ -2,25 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunrise Dental of Eugene | Warm, Gentle Dental Care in Eugene, OR</title>
-  <meta name="description" content="Welcome to Sunrise Dental of Eugene. We provide comfortable, friendly, and honest dental care for families in Eugene, Oregon. Accepting new patients!">
-  <meta name="keywords" content="Sunrise Dental of Eugene, Dentist Eugene OR, Family Dentistry Eugene, Emergency Dentist Eugene, Teeth Cleaning Eugene">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Sunrise Dental of Eugene | Interactive Design Mockups</title>
+  <meta name="description" content="Explore interactive, modern design concepts for Sunrise Dental of Eugene. Toggle between Bento-Grid, Scandinavian Minimalist, and Editorial Boutique layouts.">
 
-  <!-- Open Graph / Social Sharing -->
-  <meta property="og:title" content="Sunrise Dental of Eugene | Gentle, Family-Focused Dentistry">
-  <meta property="og:description" content="Comfortable, caring, and honest dental care for the whole family in Eugene, OR. Book online or call today!">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sunrise Dental of Eugene — Modern Design Concepts">
+  <meta property="og:description" content="Click through interactive, mobile-optimized design directions for Sunrise Dental of Eugene.">
   <meta property="og:image" content="assets/sunrise-logo.png">
-  <meta property="og:type" content="website">
 
-  <!-- Fonts: Plus Jakarta Sans for a clean, warm, accessible feel -->
+  <!-- Fonts: Plus Jakarta Sans & Playfair Display for editorial elegance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Local Business Schema for Eugene, OR SEO -->
+  <!-- Local SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -54,112 +52,406 @@
   }
   </script>
 </head>
-<body>
+<body class="theme-bento">
 
-  <!-- Top Announcement / Contact Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-content">
-      <div class="top-bar-left">
-        <span>📍 1234 River Rd, Eugene, OR 97404</span>
-        <span class="divider">•</span>
-        <span>⏰ Mon – Fri: 8:00 AM – 5:00 PM</span>
+  <!-- TOP STICKY DESIGN SWITCHER (Mobile-Optimized Selector) -->
+  <aside class="design-switcher-bar" aria-label="Design Concept Selector">
+    <div class="switcher-container">
+      <div class="switcher-label">
+        <span class="live-dot"></span>
+        <span class="label-text">Select Design:</span>
       </div>
-      <div class="top-bar-right">
-        <a href="tel:5415550123" class="phone-link">
-          <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+      <div class="switcher-pills" role="tablist">
+        <button class="switcher-pill active" data-theme="bento" role="tab" aria-selected="true">
+          <span class="pill-icon">🍱</span>
+          <span class="pill-title">Bento Grid</span>
+          <span class="pill-tag">Modern Tech</span>
+        </button>
+
+        <button class="switcher-pill" data-theme="scandinavian" role="tab" aria-selected="false">
+          <span class="pill-icon">🏛️</span>
+          <span class="pill-title">Scandinavian</span>
+          <span class="pill-tag">Warm Minimalist</span>
+        </button>
+
+        <button class="switcher-pill" data-theme="editorial" role="tab" aria-selected="false">
+          <span class="pill-icon">🌿</span>
+          <span class="pill-title">Editorial Spa</span>
+          <span class="pill-tag">Boutique Wellness</span>
+        </button>
+
+        <button class="switcher-pill" data-theme="classic" role="tab" aria-selected="false">
+          <span class="pill-icon">☀️</span>
+          <span class="pill-title">Warm & Plain</span>
+          <span class="pill-tag">Original Eugene</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- TOP CLINIC UTILITY BAR -->
+  <div class="top-clinic-bar">
+    <div class="container clinic-bar-inner">
+      <div class="clinic-location">
+        <span>📍 1234 River Rd, Eugene, OR</span>
+        <span class="bullet">•</span>
+        <span>⏰ Mon–Fri 8am–5pm</span>
+      </div>
+      <div class="clinic-phone">
+        <a href="tel:5415550123" class="phone-tap-link">
+          <svg class="phone-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
           </svg>
-          <strong>(541) 555-0123</strong>
+          <span>(541) 555-0123</span>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Primary Navigation -->
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <a href="#top" class="brand-logo">
-        <img src="assets/sunrise-logo.png" alt="Sunrise Dental of Eugene" class="logo-img">
+  <!-- SITE HEADER -->
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="#top" class="site-logo">
+        <img src="assets/sunrise-logo.png" alt="Sunrise Dental of Eugene" class="logo-image">
       </a>
 
-      <nav class="main-nav" id="mainNav">
-        <a href="#services">Services</a>
-        <a href="#about">About Our Practice</a>
-        <a href="#reviews">Patient Reviews</a>
-        <a href="#process">How It Works</a>
-        <a href="#contact">Contact</a>
-        <a href="#mockups-showcase" class="nav-mockup-pill">View Design Options ✨</a>
+      <nav class="desktop-nav">
+        <a href="#services-area">Services</a>
+        <a href="#pricing-area">Pricing & Care</a>
+        <a href="#reviews-area">Reviews</a>
+        <a href="#booking-area">Location</a>
       </nav>
 
-      <div class="nav-actions">
-        <a href="#booking-card" class="btn btn-primary">Schedule Visit</a>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+      <div class="header-right">
+        <a href="#booking-card" class="btn btn-primary header-btn">Schedule Visit</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open mobile navigation">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#services-area">Our Services</a>
+      <a href="#pricing-area">Pricing & Care</a>
+      <a href="#reviews-area">Patient Reviews</a>
+      <a href="#booking-area">Clinic Location & Hours</a>
+      <a href="tel:5415550123" class="mobile-call-link">📞 Call (541) 555-0123</a>
+      <a href="#booking-card" class="btn btn-primary btn-full mobile-cta">Schedule Online</a>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="top">
-    <div class="hero-bg-sun"></div>
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="badge-tag">
-          <span class="sun-icon">☀️</span>
-          <span>WELCOME TO YOUR DENTAL HOME</span>
-        </div>
-        <h1>Comfortable, Caring Dentistry for <span class="highlight">Eugene Families</span></h1>
-        <p class="hero-subtext">
-          A warm, stress-free dental experience for patients of all ages. From gentle routine cleanings to same-day emergencies, Dr. and our caring team treat you like neighborhood family.
-        </p>
+  <!-- MAIN DYNAMIC CONTENT CONTAINER -->
+  <main id="main-content">
 
-        <!-- Trust Badges -->
-        <div class="trust-pills">
-          <div class="trust-pill">
-            <span class="pill-check">✓</span>
-            <span>Accepting New Patients</span>
-          </div>
-          <div class="trust-pill">
-            <span class="pill-check">✓</span>
-            <span>Same-Day Emergencies</span>
-          </div>
-          <div class="trust-pill">
-            <span class="pill-check">✓</span>
-            <span>Most Insurances Accepted</span>
-          </div>
+    <!-- ===================================================================
+         VIEW 1: MODERN BENTO GRID (Apple/Linear Tech-Forward)
+         =================================================================== -->
+    <section class="view-panel view-bento" id="view-bento">
+      <div class="container">
+        <!-- Bento Intro Headline -->
+        <div class="bento-badge-row">
+          <span class="badge-tag"><span class="pulse-dot"></span> NEXT-GENERATION GENTLE DENTISTRY IN EUGENE</span>
         </div>
 
-        <div class="hero-cta-group">
-          <a href="#booking-card" class="btn btn-primary btn-large">Request an Appointment &rarr;</a>
-          <a href="tel:5415550123" class="btn btn-secondary btn-large">Call (541) 555-0123</a>
+        <!-- The Bento Grid -->
+        <div class="bento-grid">
+          <!-- Bento Tile 1: Main Hero -->
+          <div class="bento-card bento-hero">
+            <span class="bento-sub">SUNRISE DENTAL OF EUGENE</span>
+            <h2>Comfortable, Caring Dentistry <span class="highlight-bento">Built for Real Life.</span></h2>
+            <p>We've redesigned the dental visit from the ground up: zero pain, modern digital imaging, transparent flat-rate pricing, and a team that genuinely cares about your peace of mind.</p>
+            <div class="bento-actions">
+              <a href="#booking-card" class="btn btn-primary">Book in 60 Seconds &rarr;</a>
+              <a href="tel:5415550123" class="btn btn-ghost">Call Front Desk</a>
+            </div>
+          </div>
+
+          <!-- Bento Tile 2: Live Chair Availability -->
+          <div class="bento-card bento-status">
+            <div class="status-indicator">
+              <span class="ping-circle"></span>
+              <strong>Live Openings Today</strong>
+            </div>
+            <div class="next-time-box">
+              <span class="time-label">Next Available Slot:</span>
+              <span class="time-stamp">Today at 2:30 PM</span>
+            </div>
+            <p class="status-note">Same-day emergencies & routine cleanings welcome.</p>
+            <a href="#booking-card" class="bento-mini-btn">Claim Slot &rarr;</a>
+          </div>
+
+          <!-- Bento Tile 3: 5-Star Social Proof -->
+          <div class="bento-card bento-reviews">
+            <div class="google-icon-row">
+              <svg class="google-svg" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
+              <span class="stars-val">★★★★★</span>
+              <strong>5.0 / 5.0</strong>
+            </div>
+            <p class="review-snippet">"The friendliest dental office in Eugene! Thorough, painless, and completely transparent."</p>
+            <span class="reviewer-tag">— Sarah M., River Rd Patient</span>
+          </div>
+
+          <!-- Bento Tile 4: Visual Concept Preview -->
+          <div class="bento-card bento-preview-tile">
+            <img src="assets/modern-bento-mockup.jpg" alt="Bento UI Concept" class="bento-img">
+            <div class="preview-overlay">
+              <span>View Fullscreen Concept &rarr;</span>
+            </div>
+          </div>
+
+          <!-- Bento Tile 5: Services Matrix -->
+          <div class="bento-card bento-services">
+            <h3>Modern Care Matrix</h3>
+            <div class="services-chips">
+              <span class="chip">✨ Pain-Free Cleanings</span>
+              <span class="chip">🦷 Tooth-Colored Crowns</span>
+              <span class="chip">🧸 Pediatric Dentistry</span>
+              <span class="chip">🚨 Same-Day Emergencies</span>
+              <span class="chip">💎 Laser Whitening</span>
+              <span class="chip">📋 Digital 3D Scans</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Quick 3-Field Booking Card -->
-      <div class="hero-card-wrapper" id="booking-card">
-        <div class="booking-card">
-          <div class="card-sun-accent"></div>
-          <div class="card-header">
-            <h3>Request an Appointment</h3>
-            <p>Fast & simple. Our Eugene team will call you to confirm your ideal time.</p>
+
+    <!-- ===================================================================
+         VIEW 2: SCANDINAVIAN WARM MINIMALIST (Airy & Architectural)
+         =================================================================== -->
+    <section class="view-panel view-scandinavian" id="view-scandinavian">
+      <div class="container">
+        <div class="scandi-grid">
+          <div class="scandi-text">
+            <span class="scandi-sub">EUGENE, OREGON • EST. 2026</span>
+            <h1 class="scandi-title">A Calm Sanctuary for Your Smile.</h1>
+            <p class="scandi-lead">We believe dental visits should calm your senses rather than provoke anxiety. Our sun-drenched River Road studio combines natural light, Scandinavian acoustic dampening, and gentle conservative care.</p>
+            
+            <div class="scandi-pillars">
+              <div class="scandi-pillar">
+                <span class="pillar-num">01</span>
+                <div>
+                  <h4>Zero Pressure</h4>
+                  <p>We preserve your natural teeth and only recommend necessary care.</p>
+                </div>
+              </div>
+              <div class="scandi-pillar">
+                <span class="pillar-num">02</span>
+                <div>
+                  <h4>Acoustic Peace</h4>
+                  <p>Noise-canceling suites and warm blankets create a peaceful experience.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="scandi-cta-row">
+              <a href="#booking-card" class="scandi-pill-btn">Reserve a Private Suite &rarr;</a>
+              <span class="scandi-phone">or call (541) 555-0123</span>
+            </div>
           </div>
 
-          <form id="heroBookingForm" class="clean-form">
+          <div class="scandi-visual">
+            <div class="scandi-frame">
+              <img src="assets/modern-scandinavian-mockup.jpg" alt="Scandinavian Studio Interior" class="scandi-hero-img">
+            </div>
+            <div class="scandi-caption">
+              <span>Sunlight Suites at 1234 River Rd, Eugene</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         VIEW 3: EDITORIAL BOUTIQUE DENTAL SPA (Wellness Club Feel)
+         =================================================================== -->
+    <section class="view-panel view-editorial" id="view-editorial">
+      <div class="container">
+        <div class="editorial-header">
+          <span class="editorial-kicker">WELLNESS • RESTORATION • PRESERVATION</span>
+          <h1 class="editorial-headline">A Refreshing Take on Dental Health.</h1>
+          <p class="editorial-intro">Designed like a boutique wellness retreat. Experience custom aromatherapy, non-toxic materials, and completely transparent flat-rate pricing.</p>
+        </div>
+
+        <div class="editorial-suite-banner">
+          <div class="suite-img-wrapper">
+            <img src="assets/modern-editorial-mockup.jpg" alt="Editorial Dental Lounge">
+          </div>
+        </div>
+
+        <!-- Transparent Flat-Rate Pricing Menu -->
+        <div class="editorial-pricing" id="pricing-area">
+          <div class="pricing-title text-center">
+            <span class="sub-tag">TRANSPARENT PRICING</span>
+            <h3>Simple, Honest Rates. Zero Surprise Bills.</h3>
+          </div>
+
+          <div class="pricing-cards-grid">
+            <div class="price-card">
+              <span class="price-tag">PREVENTATIVE</span>
+              <h4>Comprehensive Exam & Clean</h4>
+              <div class="price-val">$149 <span>/ visit</span></div>
+              <p>Full scale, polish, periodontal charting, and digital low-radiation x-rays.</p>
+              <a href="#booking-card" class="btn btn-secondary btn-full">Book Exam</a>
+            </div>
+
+            <div class="price-card featured-price">
+              <span class="price-tag gold-tag">MOST POPULAR</span>
+              <h4>Annual Family Membership</h4>
+              <div class="price-val">$29 / mo</div>
+              <p>2 cleanings, unlimited x-rays, exams, plus 20% off all restorative procedures.</p>
+              <a href="#booking-card" class="btn btn-primary btn-full">Join Membership</a>
+            </div>
+
+            <div class="price-card">
+              <span class="price-tag">COSMETIC</span>
+              <h4>Express Laser Whitening</h4>
+              <div class="price-val">$299 <span>flat</span></div>
+              <p>Up to 7 shades brighter in a single 45-minute comfortable session.</p>
+              <a href="#booking-card" class="btn btn-secondary btn-full">Book Whitening</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         VIEW 4: WARM & PLAIN (Original Eugene Community Layout)
+         =================================================================== -->
+    <section class="view-panel view-classic" id="view-classic">
+      <div class="container">
+        <div class="classic-hero-grid">
+          <div class="classic-hero-text">
+            <div class="badge-tag">☀️ WARM & FRIENDLY NEIGHBORHOOD CARE</div>
+            <h1>Gentle, Honest Dental Care in <span class="highlight-blue">Eugene</span></h1>
+            <p>Your trusted dental home in Eugene, Oregon. Gentle routine checkups, pain-free emergency visits, and pediatric care for the entire family.</p>
+            <div class="classic-pills">
+              <span>✔ Accepting New Patients</span>
+              <span>✔ Same-Day Emergencies</span>
+              <span>✔ Most Insurances In-Network</span>
+            </div>
+            <div class="classic-actions">
+              <a href="#booking-card" class="btn btn-primary">Schedule Appointment</a>
+              <a href="tel:5415550123" class="btn btn-secondary">Call (541) 555-0123</a>
+            </div>
+          </div>
+          <div class="classic-hero-image">
+            <img src="assets/sunrise-mockup-b.jpg" alt="Sunrise Dental Warm Layout">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         SHARED UNIVERSAL SECTIONS (Services, Reviews & Booking)
+         =================================================================== -->
+
+    <!-- Universal Services Overview -->
+    <section class="services-universal" id="services-area">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-tag">COMPREHENSIVE SERVICES</span>
+          <h2>Gentle Care for Every Smile</h2>
+          <p>From routine cleanings to same-day urgent care, we keep your visit simple and stress-free.</p>
+        </div>
+
+        <div class="services-grid-4">
+          <div class="service-card-clean">
+            <div class="service-icon">🪥</div>
+            <h3>Routine Cleanings</h3>
+            <p>Gentle scaling, polishing, digital x-rays, and comprehensive oral health screenings.</p>
+          </div>
+          <div class="service-card-clean">
+            <div class="service-icon">👑</div>
+            <h3>Restorative Crowns</h3>
+            <p>Mercury-free composite fillings and natural ceramic crowns that last a lifetime.</p>
+          </div>
+          <div class="service-card-clean">
+            <div class="service-icon">🧸</div>
+            <h3>Pediatric Dentistry</h3>
+            <p>A fun, relaxed environment where kids build positive, lifelong oral habits.</p>
+          </div>
+          <div class="service-card-clean emergency-card">
+            <div class="service-icon">🚨</div>
+            <h3>Same-Day Emergencies</h3>
+            <p>Sudden pain or chipped tooth? We reserve same-day urgent slots for rapid relief.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Universal Patient Reviews -->
+    <section class="reviews-universal" id="reviews-area">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-tag">PATIENT REVIEWS</span>
+          <h2>Loved by Eugene Families</h2>
+        </div>
+
+        <div class="reviews-slider">
+          <div class="review-quote-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"I have always had dental anxiety, but the team at Sunrise completely changed my perspective. They explained every step gently and I didn't feel a thing!"</p>
+            <div class="author">
+              <strong>Jennifer M.</strong>
+              <span>River Road Resident • Patient for 2 years</span>
+            </div>
+          </div>
+
+          <div class="review-quote-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">"Brought both of my kids (ages 5 and 8) here. The staff was so patient and fun that my kids actually asked when they could come back! Outstanding care."</p>
+            <div class="author">
+              <strong>David & Sarah K.</strong>
+              <span>Eugene Family Patients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Universal Booking Card Section -->
+    <section class="booking-section-wrap" id="booking-area">
+      <div class="container booking-grid-wrap">
+        <div class="booking-info-left">
+          <span class="sub-tag">APPOINTMENT REQUEST</span>
+          <h2>Ready for Your Best Dental Experience?</h2>
+          <p>Book online in under 60 seconds. Our friendly Eugene staff will call or text to confirm your exact time.</p>
+          <div class="clinic-details-box">
+            <p><strong>📍 Clinic:</strong> 1234 River Rd, Eugene, OR 97404</p>
+            <p><strong>📞 Phone:</strong> <a href="tel:5415550123">(541) 555-0123</a></p>
+            <p><strong>⏰ Hours:</strong> Mon–Fri 8:00 AM – 5:00 PM</p>
+            <p><strong>🛡️ Insurance:</strong> In-network with most major PPO providers</p>
+          </div>
+        </div>
+
+        <!-- Interactive Booking Card -->
+        <div class="booking-card" id="booking-card">
+          <div class="card-accent-bar"></div>
+          <div class="card-header">
+            <h3>Request an Appointment</h3>
+            <p>Fast & confidential. No medical history required online.</p>
+          </div>
+
+          <form id="appointmentForm" class="clean-form">
             <div class="form-group">
-              <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" placeholder="Sarah Jenkins" required>
+              <label for="pName">Full Name</label>
+              <input type="text" id="pName" placeholder="Alex Morgan" required>
             </div>
 
             <div class="form-group">
-              <label for="phoneNum">Phone Number</label>
-              <input type="tel" id="phoneNum" placeholder="(541) 555-0199" required>
+              <label for="pPhone">Phone Number</label>
+              <input type="tel" id="pPhone" placeholder="(541) 555-0199" required>
             </div>
 
             <div class="form-row">
               <div class="form-group">
-                <label for="preferredDay">Preferred Day</label>
-                <select id="preferredDay" required>
+                <label for="pDay">Preferred Day</label>
+                <select id="pDay" required>
                   <option value="">Select Day...</option>
                   <option value="Monday">Monday</option>
                   <option value="Tuesday">Tuesday</option>
@@ -170,334 +462,52 @@
               </div>
 
               <div class="form-group">
-                <label for="serviceType">Visit Type</label>
-                <select id="serviceType" required>
-                  <option value="cleaning">Cleaning & Exam</option>
-                  <option value="emergency">Toothache / Urgent</option>
-                  <option value="family">Family / Pediatric</option>
-                  <option value="consult">Cosmetic Consult</option>
+                <label for="pService">Service Needed</label>
+                <select id="pService" required>
+                  <option value="cleaning">Cleaning & Checkup</option>
+                  <option value="emergency">Urgent / Toothache</option>
+                  <option value="family">Pediatric / Family</option>
+                  <option value="whitening">Cosmetic Whitening</option>
                 </select>
               </div>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-full">Submit Request &rarr;</button>
-            <p class="form-disclaimer">🔒 Your privacy is protected. No sensitive medical records required.</p>
+            <button type="submit" class="btn btn-primary btn-full submit-btn">Confirm Request &rarr;</button>
+            <p class="privacy-note">🔒 Zero spam. We only contact you to confirm your visit.</p>
           </form>
 
-          <!-- Success Confirmation Screen -->
-          <div class="card-success" id="bookingSuccess">
-            <div class="success-sun">☀️</div>
-            <h3>We've Got You Scheduled!</h3>
-            <p>Thank you, <strong id="confirmName">Friend</strong>. Our Eugene front desk will call you shortly at <strong id="confirmPhone">number</strong> to finalize your appointment.</p>
-            <button type="button" class="btn btn-secondary" id="resetFormBtn">Request Another Time</button>
+          <!-- Success State -->
+          <div class="booking-success" id="bookingSuccess">
+            <div class="success-check">☀️</div>
+            <h3>Request Confirmed!</h3>
+            <p>Thank you, <strong id="successPatient">Neighbor</strong>. Our Eugene front desk will call you at <strong id="successNumber">your phone</strong> shortly to finalize your appointment!</p>
+            <button type="button" class="btn btn-secondary btn-full" id="newRequestBtn">Submit Another Request</button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Google Reviews & Social Proof Strip -->
-  <section class="review-banner">
-    <div class="container review-banner-content">
-      <div class="google-badge">
-        <svg class="google-g" viewBox="0 0 24 24">
-          <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
-          <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/>
-          <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
-          <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
-        </svg>
-        <div class="google-stars">★★★★★</div>
-        <span class="rating-text"><strong>5.0 Star Rating</strong> from our Eugene Patients</span>
+  </main>
+
+  <!-- MOBILE BOTTOM STICKY BAR (For instant mobile conversions) -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:5415550123" class="mobile-bar-btn call-btn">
+      <span>📞 Call Office</span>
+    </a>
+    <a href="#booking-card" class="mobile-bar-btn book-btn">
+      <span>📅 Book Visit</span>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="assets/sunrise-logo.png" alt="Sunrise Dental of Eugene" class="footer-logo-img">
+        <p>Gentle, modern, and honest dental care for Eugene families. Visit us on River Road.</p>
       </div>
-      <div class="review-quote-teaser">
-        <em>"Best dental office in Eugene! Gentle, thorough, and the friendliest staff."</em> — <strong>Mark T., South Eugene</strong>
-      </div>
-    </div>
-  </section>
-
-  <!-- Clean Services Section -->
-  <section class="services-section" id="services">
-    <div class="container">
-      <div class="section-title text-center">
-        <span class="sub-tag">OUR SERVICES</span>
-        <h2>Gentle, Comprehensive Care for Every Smile</h2>
-        <p>Simple, honest dental care without pressure or surprise bills.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- Service Card 1 -->
-        <div class="service-box">
-          <div class="service-icon-sun">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <h3>Routine Cleanings & Exams</h3>
-          <p>Gentle scaling, polishing, digital low-radiation x-rays, and comprehensive exams that keep your smile cavity-free.</p>
-          <ul class="clean-check-list">
-            <li>Thorough, pain-free cleanings</li>
-            <li>Oral cancer screenings</li>
-            <li>Enamel fluoride treatments</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 2 -->
-        <div class="service-box">
-          <div class="service-icon-sun">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 12l2 2 4-4m5 .5A10 10 0 1111.3 2c3.4-.5 7.2.8 9.8 3.4 2.6 2.6 3.9 6.4 3.4 9.8z"/>
-            </svg>
-          </div>
-          <h3>Restorative Care & Fillings</h3>
-          <p>Tooth-colored composite fillings, ceramic crowns, and bridges that blend invisibly with your natural teeth.</p>
-          <ul class="clean-check-list">
-            <li>Mercury-free composite fillings</li>
-            <li>Durable porcelain crowns</li>
-            <li>Gentle root canal therapy</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="service-box">
-          <div class="service-icon-sun">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </div>
-          <h3>Family & Pediatric Dentistry</h3>
-          <p>A fun, relaxed environment where kids feel safe. We instill lifelong healthy habits from their very first visit.</p>
-          <ul class="clean-check-list">
-            <li>Kid-friendly patient rooms</li>
-            <li>Protective dental sealants</li>
-            <li>Family appointments together</li>
-          </ul>
-        </div>
-
-        <!-- Service Card 4 -->
-        <div class="service-box highlight-box">
-          <div class="service-icon-sun red-accent">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="12" y1="8" x2="12" y2="12"/>
-              <line x1="12" y1="16" x2="12.01" y2="16"/>
-            </svg>
-          </div>
-          <h3>Emergency Dental Visits</h3>
-          <p>Sudden tooth pain or a broken tooth? We reserve same-day emergency appointment slots for fast relief.</p>
-          <ul class="clean-check-list">
-            <li>Same-day emergency availability</li>
-            <li>Immediate pain diagnosis</li>
-            <li>Walk-ins & emergency calls</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Easy 3-Step Process -->
-  <section class="process-section" id="process">
-    <div class="container">
-      <div class="section-title text-center">
-        <span class="sub-tag">SIMPLE & STRESS-FREE</span>
-        <h2>Your Visit in 3 Easy Steps</h2>
-        <p>We know going to the dentist can feel daunting. We've simplified every step.</p>
-      </div>
-
-      <div class="process-grid">
-        <div class="step-card">
-          <div class="step-num">1</div>
-          <h3>Pick a Convenient Time</h3>
-          <p>Fill out our simple request card or give our front desk a friendly call. We offer flexible morning and afternoon times.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-num">2</div>
-          <h3>Relax in Our Eugene Office</h3>
-          <p>Enjoy our warm, bright waiting room, gentle treatment chairs, and a team that takes time to listen to your needs.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-num">3</div>
-          <h3>Enjoy Your Bright Smile</h3>
-          <p>Leave with healthy teeth, fresh breath, and zero pressure. Transparent pricing with no surprise bills—ever.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Patient Testimonials -->
-  <section class="testimonials-section" id="reviews">
-    <div class="container">
-      <div class="section-title text-center">
-        <span class="sub-tag">PATIENT STORIES</span>
-        <h2>What Eugene Neighbors Say About Us</h2>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"I have always had dental anxiety, but the team at Sunrise completely changed my perspective. They explained every step gently and I didn't feel a thing. Eugene is lucky to have them!"</p>
-          <div class="reviewer-meta">
-            <strong>Jennifer M.</strong>
-            <span>River Road Resident • Patient for 2 years</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Brought both of my kids (ages 5 and 8) here. The staff was so patient and fun that my kids actually asked when they could come back! Outstanding family care."</p>
-          <div class="reviewer-meta">
-            <strong>David & Sarah K.</strong>
-            <span>Eugene Family Patients</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Had an emergency chipped tooth on a Thursday morning and they got me in before lunch. Fixed it perfectly and matched the color identically. Honest, fair pricing."</p>
-          <div class="reviewer-meta">
-            <strong>Brian L.</strong>
-            <span>Downtown Eugene</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About The Practice -->
-  <section class="about-section" id="about">
-    <div class="container about-grid">
-      <div class="about-text">
-        <span class="sub-tag">ABOUT OUR EUGENE PRACTICE</span>
-        <h2>A Bright, Friendly Approach to Dental Health</h2>
-        <p>At <strong>Sunrise Dental of Eugene</strong>, we believe every patient deserves respect, gentleness, and complete transparency. We don't believe in aggressive treatment plans or rushed 5-minute appointments.</p>
-        <p>Located right on River Road, our office is equipped with modern digital imaging and comfortable amenities designed to help you relax from the moment you step through our doors.</p>
-
-        <div class="about-highlights">
-          <div class="highlight-item">
-            <span class="highlight-icon">☀️</span>
-            <div>
-              <h4>Warm & Welcoming Team</h4>
-              <p>Kind professionals who treat you with patience and compassion.</p>
-            </div>
-          </div>
-          <div class="highlight-item">
-            <span class="highlight-icon">🛡️</span>
-            <div>
-              <h4>Conservative Dentistry</h4>
-              <p>We preserve your natural teeth and only recommend necessary care.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-info-card">
-        <h3>Clinic Information</h3>
-        <ul class="info-list">
-          <li>
-            <strong>📍 Address:</strong>
-            <span>1234 River Rd, Eugene, OR 97404</span>
-          </li>
-          <li>
-            <strong>📞 Phone:</strong>
-            <a href="tel:5415550123">(541) 555-0123</a>
-          </li>
-          <li>
-            <strong>✉️ Email:</strong>
-            <span>hello@sunrisedentalofeugene.com</span>
-          </li>
-          <li>
-            <strong>⏰ Hours:</strong>
-            <span>Monday – Friday: 8:00 AM – 5:00 PM<br>Saturday – Sunday: Closed</span>
-          </li>
-        </ul>
-        <a href="#booking-card" class="btn btn-primary btn-full">Book Your First Visit</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- MOCKUPS PERUSAL SHOWCASE (For the client/partner to review all design concepts) -->
-  <section class="mockups-showcase-section" id="mockups-showcase">
-    <div class="container">
-      <div class="showcase-header">
-        <span class="sub-tag">DESIGN PORTFOLIO & VARIATIONS</span>
-        <h2>Explore Alternative Design Mockups</h2>
-        <p>Review the different design directions crafted for Sunrise Dental and other dental clinic concepts.</p>
-      </div>
-
-      <div class="mockup-cards-grid">
-        <!-- Sunrise Option A -->
-        <div class="mockup-item">
-          <div class="mockup-thumb">
-            <img src="assets/sunrise-mockup-a.jpg" alt="Option A: Clean, Airy & Direct">
-          </div>
-          <div class="mockup-body">
-            <span class="mockup-pill blue">OPTION A</span>
-            <h4>Clean, Airy & Direct</h4>
-            <p>Generous whitespace, large friendly phone header, and straightforward service pillars.</p>
-          </div>
-        </div>
-
-        <!-- Sunrise Option B -->
-        <div class="mockup-item">
-          <div class="mockup-thumb">
-            <img src="assets/sunrise-mockup-b.jpg" alt="Option B: Warm, Community & Trust-Driven">
-          </div>
-          <div class="mockup-body">
-            <span class="mockup-pill yellow">OPTION B</span>
-            <h4>Warm, Community & Trust-Driven</h4>
-            <p>Top Eugene address bar, 5-star Google review proof, and a 3-step patient journey.</p>
-          </div>
-        </div>
-
-        <!-- Sunrise Option C -->
-        <div class="mockup-item">
-          <div class="mockup-thumb">
-            <img src="assets/sunrise-mockup-c.jpg" alt="Option C: Plain, Friendly & Direct Booking">
-          </div>
-          <div class="mockup-body">
-            <span class="mockup-pill green">OPTION C</span>
-            <h4>Plain, Friendly & Direct Booking</h4>
-            <p>Direct hero booking card with insurance badges and same-day emergency focus.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Clean, Plain Footer -->
-  <footer class="site-footer" id="contact">
-    <div class="container footer-grid">
-      <div class="footer-col brand-col">
-        <img src="assets/sunrise-logo.png" alt="Sunrise Dental of Eugene" class="footer-logo">
-        <p>Providing gentle, warm, and honest dental care for Eugene families. We are proud to be your local neighborhood dental practice.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#about">About Our Practice</a></li>
-          <li><a href="#reviews">Patient Reviews</a></li>
-          <li><a href="#booking-card">Schedule an Appointment</a></li>
-          <li><a href="#mockups-showcase">View Design Mockups</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Eugene Clinic</h4>
-        <p>📍 1234 River Rd, Eugene, OR 97404</p>
-        <p>📞 (541) 555-0123</p>
-        <p>⏰ Mon – Fri: 8:00 AM – 5:00 PM</p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>&copy; 2026 Sunrise Dental of Eugene. All Rights Reserved. Clean & Plain Website Design.</p>
+      <div class="footer-meta">
+        <p>&copy; 2026 Sunrise Dental of Eugene. Fully responsive & mobile-optimized.</p>
       </div>
     </div>
   </footer>
