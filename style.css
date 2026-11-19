@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Sunrise Dental of Eugene - Multi-Theme & Mobile-Optimized System
+   Sunrise Dental of Eugene - 7-Theme & Mobile-Optimized System
    ========================================================================== */
 
 :root {
@@ -37,6 +37,7 @@
 
   --font-main: 'Plus Jakarta Sans', system-ui, sans-serif;
   --font-editorial: 'Playfair Display', Georgia, serif;
+  --font-swiss: 'Space Grotesk', system-ui, sans-serif;
   --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -58,7 +59,7 @@ body {
   color: var(--text-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 70px; /* Space for mobile sticky bottom bar */
+  padding-bottom: 70px;
 }
 
 @media (min-width: 769px) {
@@ -87,13 +88,13 @@ a {
 }
 
 /* ==========================================================================
-   TOP STICKY DESIGN SWITCHER (Interactive Pill Selector)
+   TOP STICKY DESIGN SWITCHER (7 Option Selector)
    ========================================================================== */
 .design-switcher-bar {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: rgba(15, 23, 42, 0.95);
+  background: rgba(15, 23, 42, 0.96);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   padding: 0.65rem 0;
@@ -146,7 +147,7 @@ a {
 .switcher-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
   padding: 0.5rem 0.95rem;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -379,7 +380,7 @@ a {
 }
 
 /* ==========================================================================
-   VIEW CONTROLLER SYSTEM (Panels hide/show depending on active theme)
+   VIEW CONTROLLER (Hide/Show Panels based on active theme)
    ========================================================================== */
 .view-panel {
   display: none;
@@ -389,6 +390,9 @@ a {
 body.theme-bento .view-bento { display: block; }
 body.theme-scandinavian .view-scandinavian { display: block; }
 body.theme-editorial .view-editorial { display: block; }
+body.theme-swiss .view-swiss { display: block; }
+body.theme-glass .view-glass { display: block; }
+body.theme-midnight .view-midnight { display: block; }
 body.theme-classic .view-classic { display: block; }
 
 @keyframes fadeInView {
@@ -397,7 +401,7 @@ body.theme-classic .view-classic { display: block; }
 }
 
 /* ==========================================================================
-   VIEW 1: MODERN BENTO GRID STYLES
+   VIEW 1: MODERN BENTO GRID
    ========================================================================== */
 .view-bento {
   padding: 3.5rem 0 5rem 0;
@@ -497,7 +501,6 @@ body.theme-classic .view-classic { display: block; }
   flex-wrap: wrap;
 }
 
-/* Status Tile */
 .bento-status {
   background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%);
   border-color: #fde68a;
@@ -552,7 +555,6 @@ body.theme-classic .view-classic { display: block; }
   color: var(--primary-blue);
 }
 
-/* Reviews Tile */
 .bento-reviews {
   display: flex;
   flex-direction: column;
@@ -588,7 +590,6 @@ body.theme-classic .view-classic { display: block; }
   font-weight: 600;
 }
 
-/* Preview Image Tile */
 .bento-preview-tile {
   padding: 0;
   aspect-ratio: 16 / 10;
@@ -617,7 +618,6 @@ body.theme-classic .view-classic { display: block; }
   font-weight: 700;
 }
 
-/* Services Tile */
 .bento-services {
   grid-column: span 2;
 }
@@ -895,7 +895,447 @@ body.theme-classic .view-classic { display: block; }
 }
 
 /* ==========================================================================
-   VIEW 4: WARM & PLAIN (Original Eugene Community)
+   VIEW 4: SWISS MODERNIST (NEW - Space Grotesk Bold Authority)
+   ========================================================================== */
+.view-swiss {
+  padding: 5rem 0;
+  background: #ffffff;
+  font-family: var(--font-swiss);
+}
+
+.swiss-top-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: #64748b;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 0.75rem;
+  margin-bottom: 3rem;
+}
+
+.swiss-bold-statement h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: #0f172a;
+  margin-bottom: 3.5rem;
+}
+
+.swiss-blue {
+  color: var(--primary-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 6px;
+}
+
+.swiss-manifesto-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 4rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 2.5rem;
+}
+
+.swiss-lead-text {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: #1e293b;
+  margin-bottom: 2.5rem;
+}
+
+.swiss-solid-btn {
+  display: inline-block;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  transition: var(--transition);
+}
+
+.swiss-solid-btn:hover {
+  background: var(--primary-blue);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.swiss-direct-call {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.1em;
+}
+
+.swiss-protocols-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.protocol-row {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 1.5rem;
+}
+
+.protocol-index {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.protocol-detail h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.02em;
+}
+
+.protocol-detail p {
+  font-size: 0.925rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   VIEW 5: SOFT GLASSMORPHISM (NEW - Translucent Frosted Bio-Clean)
+   ========================================================================== */
+.view-glass {
+  position: relative;
+  padding: 6rem 0;
+  background: #f0f7ff;
+  overflow: hidden;
+}
+
+.glass-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.glass-orb-1 {
+  width: 450px;
+  height: 450px;
+  background: rgba(30, 170, 231, 0.25);
+  top: -100px;
+  left: -50px;
+}
+
+.glass-orb-2 {
+  width: 500px;
+  height: 500px;
+  background: rgba(250, 204, 21, 0.25);
+  bottom: -150px;
+  right: -50px;
+}
+
+.glass-orb-3 {
+  width: 300px;
+  height: 300px;
+  background: rgba(167, 243, 208, 0.3);
+  top: 40%;
+  left: 45%;
+}
+
+.glass-relative {
+  position: relative;
+  z-index: 1;
+}
+
+.glass-hero-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  padding: 4rem 3.5rem;
+  box-shadow: 0 25px 60px rgba(30, 170, 231, 0.12);
+  text-align: center;
+}
+
+.glass-tag {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--primary-blue-dark);
+  margin-bottom: 1.5rem;
+}
+
+.glass-hero-card h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.glass-highlight {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--sun-yellow-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-desc {
+  font-size: 1.15rem;
+  color: #475569;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.glass-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.glass-stat-item {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1rem;
+}
+
+.stat-big {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.stat-desc {
+  font-size: 0.825rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.glass-btn-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.glass-cta-btn {
+  background: var(--primary-blue);
+  color: #ffffff;
+  padding: 0.95rem 2.25rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 8px 24px rgba(30, 170, 231, 0.35);
+}
+
+.glass-cta-btn:hover {
+  background: var(--primary-blue-dark);
+  transform: translateY(-2px);
+}
+
+.glass-call {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+/* ==========================================================================
+   VIEW 6: MIDNIGHT SUNRISE (NEW - Luxury Cosmetic Dark Mode)
+   ========================================================================== */
+.view-midnight {
+  position: relative;
+  padding: 6rem 0;
+  background: #090d16;
+  color: #f8fafc;
+  overflow: hidden;
+}
+
+.midnight-radial-glow {
+  position: absolute;
+  top: -150px;
+  right: -100px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.15) 0%, rgba(30, 170, 231, 0.08) 40%, transparent 70%);
+  pointer-events: none;
+}
+
+.midnight-relative {
+  position: relative;
+  z-index: 1;
+}
+
+.midnight-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.gold-kicker {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  color: var(--sun-yellow);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.midnight-copy h1 {
+  font-family: var(--font-editorial);
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.gold-shimmer {
+  color: var(--sun-yellow);
+  font-style: italic;
+}
+
+.midnight-copy p {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 580px;
+}
+
+.midnight-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2.5rem;
+}
+
+.midnight-feat {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+.feat-star {
+  color: var(--sun-yellow);
+  font-size: 1.1rem;
+}
+
+.midnight-btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-gold-vip {
+  background: linear-gradient(135deg, var(--sun-yellow) 0%, #eab308 100%);
+  color: #090d16;
+  padding: 0.95rem 2rem;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 20px rgba(250, 204, 21, 0.3);
+}
+
+.btn-gold-vip:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+.btn-dark-outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.95rem 1.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+}
+
+.btn-dark-outline:hover {
+  border-color: var(--sun-yellow);
+  color: var(--sun-yellow);
+}
+
+.midnight-card-frame {
+  background: #111827;
+  border: 1.5px solid rgba(250, 204, 21, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 40px rgba(250, 204, 21, 0.08);
+}
+
+.vip-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  background: rgba(250, 204, 21, 0.15);
+  color: var(--sun-yellow);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.midnight-inner-card h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.midnight-inner-card p {
+  font-size: 0.925rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.vip-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1.5rem 0;
+}
+
+.vip-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.btn-gold-full {
+  display: block;
+  text-align: center;
+  background: var(--sun-yellow);
+  color: #090d16;
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  font-weight: 800;
+}
+
+.btn-gold-full:hover {
+  filter: brightness(1.1);
+}
+
+/* ==========================================================================
+   VIEW 7: WARM & PLAIN (Original Eugene Community)
    ========================================================================== */
 .view-classic {
   padding: 4.5rem 0;
@@ -1254,7 +1694,7 @@ body.theme-classic .view-classic { display: block; }
   border-radius: var(--radius-full);
   font-size: 0.9rem;
   font-weight: 700;
-  min-height: 48px; /* Touch friendly */
+  min-height: 48px;
 }
 
 .call-btn {
@@ -1325,6 +1765,17 @@ body.theme-classic .view-classic { display: block; }
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+  .swiss-manifesto-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .swiss-bold-statement h1 {
+    font-size: 2.75rem;
+  }
+  .midnight-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
   .classic-hero-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -1355,7 +1806,7 @@ body.theme-classic .view-classic { display: block; }
     display: flex;
   }
   .switcher-label .label-text {
-    display: none; /* Keep switcher compact on small phones */
+    display: none;
   }
   .bento-hero h2 {
     font-size: 1.85rem;
@@ -1365,6 +1816,19 @@ body.theme-classic .view-classic { display: block; }
   }
   .editorial-headline {
     font-size: 2.35rem;
+  }
+  .glass-hero-card {
+    padding: 2.5rem 1.5rem;
+  }
+  .glass-hero-card h2 {
+    font-size: 2.2rem;
+  }
+  .glass-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .midnight-copy h1 {
+    font-size: 2.4rem;
   }
   .form-row {
     grid-template-columns: 1fr;

@@ -1,12 +1,20 @@
 // ==========================================================================
-// Sunrise Dental of Eugene - Multi-Theme & Mobile-Optimized Script
+// Sunrise Dental of Eugene - 7-Theme & Mobile-Optimized Script
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- 1. Interactive Design Switcher (Buttons as Options) ---
+  // --- 1. Interactive 7-Option Design Switcher ---
   const switcherPills = document.querySelectorAll('.switcher-pill');
-  const validThemes = ['bento', 'scandinavian', 'editorial', 'classic'];
+  const validThemes = [
+    'bento',        // 1. Bento Grid (Modern Apple/Linear Tech)
+    'scandinavian', // 2. Scandinavian (Airy & Architectural)
+    'editorial',    // 3. Editorial Spa (Boutique Wellness Club)
+    'swiss',        // 4. Swiss Modernist (Bold Authority & Grid)
+    'glass',        // 5. Soft Glassmorphism (Frosted Bio-Clean)
+    'midnight',     // 6. Midnight Sunrise (Luxury Cosmetic Dark Mode)
+    'classic'       // 7. Warm & Plain (Original Eugene Community)
+  ];
 
   const setTheme = (themeName, shouldScroll = false) => {
     if (!validThemes.includes(themeName)) themeName = 'bento';

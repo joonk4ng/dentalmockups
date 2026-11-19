@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Sunrise Dental of Eugene | Interactive Design Mockups</title>
-  <meta name="description" content="Explore interactive, modern design concepts for Sunrise Dental of Eugene. Toggle between Bento-Grid, Scandinavian Minimalist, and Editorial Boutique layouts.">
+  <meta name="description" content="Explore 7 interactive, modern design concepts for Sunrise Dental of Eugene. Toggle between Bento-Grid, Scandinavian, Editorial Spa, Swiss Modernist, Soft Glass, Midnight Luxury, and Warm Classic layouts.">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Sunrise Dental of Eugene — Modern Design Concepts">
-  <meta property="og:description" content="Click through interactive, mobile-optimized design directions for Sunrise Dental of Eugene.">
+  <meta property="og:title" content="Sunrise Dental of Eugene — 7 Modern Design Concepts">
+  <meta property="og:description" content="Click through 7 interactive, mobile-optimized design directions for Sunrise Dental of Eugene.">
   <meta property="og:image" content="assets/sunrise-logo.png">
 
-  <!-- Fonts: Plus Jakarta Sans & Playfair Display for editorial elegance -->
+  <!-- Fonts: Plus Jakarta Sans, Playfair Display, Space Grotesk -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
@@ -54,7 +54,7 @@
 </head>
 <body class="theme-bento">
 
-  <!-- TOP STICKY DESIGN SWITCHER (Mobile-Optimized Selector) -->
+  <!-- TOP STICKY DESIGN SWITCHER (7 Option Selector) -->
   <aside class="design-switcher-bar" aria-label="Design Concept Selector">
     <div class="switcher-container">
       <div class="switcher-label">
@@ -62,24 +62,49 @@
         <span class="label-text">Select Design:</span>
       </div>
       <div class="switcher-pills" role="tablist">
+        <!-- Option 1 -->
         <button class="switcher-pill active" data-theme="bento" role="tab" aria-selected="true">
           <span class="pill-icon">🍱</span>
           <span class="pill-title">Bento Grid</span>
-          <span class="pill-tag">Modern Tech</span>
+          <span class="pill-tag">Tech Modern</span>
         </button>
 
+        <!-- Option 2 -->
         <button class="switcher-pill" data-theme="scandinavian" role="tab" aria-selected="false">
           <span class="pill-icon">🏛️</span>
           <span class="pill-title">Scandinavian</span>
           <span class="pill-tag">Warm Minimalist</span>
         </button>
 
+        <!-- Option 3 -->
         <button class="switcher-pill" data-theme="editorial" role="tab" aria-selected="false">
           <span class="pill-icon">🌿</span>
           <span class="pill-title">Editorial Spa</span>
           <span class="pill-tag">Boutique Wellness</span>
         </button>
 
+        <!-- Option 4 (NEW) -->
+        <button class="switcher-pill" data-theme="swiss" role="tab" aria-selected="false">
+          <span class="pill-icon">🇨🇭</span>
+          <span class="pill-title">Swiss Modern</span>
+          <span class="pill-tag">Bold Authority</span>
+        </button>
+
+        <!-- Option 5 (NEW) -->
+        <button class="switcher-pill" data-theme="glass" role="tab" aria-selected="false">
+          <span class="pill-icon">🪟</span>
+          <span class="pill-title">Soft Glass</span>
+          <span class="pill-tag">Bio-Clean UI</span>
+        </button>
+
+        <!-- Option 6 (NEW) -->
+        <button class="switcher-pill" data-theme="midnight" role="tab" aria-selected="false">
+          <span class="pill-icon">🌙</span>
+          <span class="pill-title">Midnight Luxury</span>
+          <span class="pill-tag">Cosmetic VIP</span>
+        </button>
+
+        <!-- Option 7 -->
         <button class="switcher-pill" data-theme="classic" role="tab" aria-selected="false">
           <span class="pill-icon">☀️</span>
           <span class="pill-title">Warm & Plain</span>
@@ -149,14 +174,11 @@
          =================================================================== -->
     <section class="view-panel view-bento" id="view-bento">
       <div class="container">
-        <!-- Bento Intro Headline -->
         <div class="bento-badge-row">
           <span class="badge-tag"><span class="pulse-dot"></span> NEXT-GENERATION GENTLE DENTISTRY IN EUGENE</span>
         </div>
 
-        <!-- The Bento Grid -->
         <div class="bento-grid">
-          <!-- Bento Tile 1: Main Hero -->
           <div class="bento-card bento-hero">
             <span class="bento-sub">SUNRISE DENTAL OF EUGENE</span>
             <h2>Comfortable, Caring Dentistry <span class="highlight-bento">Built for Real Life.</span></h2>
@@ -167,7 +189,6 @@
             </div>
           </div>
 
-          <!-- Bento Tile 2: Live Chair Availability -->
           <div class="bento-card bento-status">
             <div class="status-indicator">
               <span class="ping-circle"></span>
@@ -181,7 +202,6 @@
             <a href="#booking-card" class="bento-mini-btn">Claim Slot &rarr;</a>
           </div>
 
-          <!-- Bento Tile 3: 5-Star Social Proof -->
           <div class="bento-card bento-reviews">
             <div class="google-icon-row">
               <svg class="google-svg" viewBox="0 0 24 24"><path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/><path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.04 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/></svg>
@@ -192,7 +212,6 @@
             <span class="reviewer-tag">— Sarah M., River Rd Patient</span>
           </div>
 
-          <!-- Bento Tile 4: Visual Concept Preview -->
           <div class="bento-card bento-preview-tile">
             <img src="assets/modern-bento-mockup.jpg" alt="Bento UI Concept" class="bento-img">
             <div class="preview-overlay">
@@ -200,7 +219,6 @@
             </div>
           </div>
 
-          <!-- Bento Tile 5: Services Matrix -->
           <div class="bento-card bento-services">
             <h3>Modern Care Matrix</h3>
             <div class="services-chips">
@@ -319,7 +337,155 @@
 
 
     <!-- ===================================================================
-         VIEW 4: WARM & PLAIN (Original Eugene Community Layout)
+         VIEW 4: SWISS MODERNIST (NEW - Bold Authority & Typographic Grid)
+         =================================================================== -->
+    <section class="view-panel view-swiss" id="view-swiss">
+      <div class="container">
+        <div class="swiss-top-meta">
+          <span>OR / 97404</span>
+          <span>SUNRISE DENTAL CLINICAL PRACTICE</span>
+          <span>EUGENE, OREGON</span>
+        </div>
+
+        <div class="swiss-hero-wrapper">
+          <div class="swiss-bold-statement">
+            <h1>EXACTING CARE.<br><span class="swiss-blue">MEASURABLE</span> COMFORT.</h1>
+          </div>
+          
+          <div class="swiss-manifesto-grid">
+            <div class="swiss-lead-col">
+              <p class="swiss-lead-text">
+                We reject confusing medical jargon and rushed procedures. Sunrise Dental operates on strict clinical transparency, uncompromising gentle standards, and clear treatment pathways.
+              </p>
+              <div class="swiss-cta-box">
+                <a href="#booking-card" class="swiss-solid-btn">SCHEDULE APPOINTMENT [ONLINE] &rarr;</a>
+                <span class="swiss-direct-call">DIRECT LINE: (541) 555-0123</span>
+              </div>
+            </div>
+
+            <div class="swiss-protocols-col">
+              <div class="protocol-row">
+                <span class="protocol-index">01/</span>
+                <div class="protocol-detail">
+                  <h4>DIAGNOSTIC PRECISION</h4>
+                  <p>Sub-millimeter 3D imaging, low-dose digital radiographs, and intraoral cameras.</p>
+                </div>
+              </div>
+
+              <div class="protocol-row">
+                <span class="protocol-index">02/</span>
+                <div class="protocol-detail">
+                  <h4>CONSERVATIVE RESTORATION</h4>
+                  <p>Preservation-first dentistry. We restore structural integrity using biocompatible monolith ceramics.</p>
+                </div>
+              </div>
+
+              <div class="protocol-row">
+                <span class="protocol-index">03/</span>
+                <div class="protocol-detail">
+                  <h4>RAPID EMERGENCY RESPONSE</h4>
+                  <p>Same-day triage for trauma, severe toothache, and fractures. Dedicated morning slots.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         VIEW 5: SOFT GLASSMORPHISM (NEW - Translucent Frosted Bio-Clean)
+         =================================================================== -->
+    <section class="view-panel view-glass" id="view-glass">
+      <div class="glass-orb glass-orb-1"></div>
+      <div class="glass-orb glass-orb-2"></div>
+      <div class="glass-orb glass-orb-3"></div>
+
+      <div class="container glass-relative">
+        <div class="glass-hero-card">
+          <div class="glass-tag">✨ PURE BIOLOGICAL COMFORT</div>
+          <h2>A Breath of Fresh Air in <span class="glass-highlight">Eugene Dental Care</span></h2>
+          <p class="glass-desc">Step into an ultra-clean, serene environment where state-of-the-art care feels completely weightless. Gentle air-flow cleanings, warm blankets, and zero stress.</p>
+
+          <div class="glass-stats-grid">
+            <div class="glass-stat-item">
+              <span class="stat-big">100%</span>
+              <span class="stat-desc">Pain-Free Approach</span>
+            </div>
+            <div class="glass-stat-item">
+              <span class="stat-big">5.0 ★</span>
+              <span class="stat-desc">Patient Satisfaction</span>
+            </div>
+            <div class="glass-stat-item">
+              <span class="stat-big">0 min</span>
+              <span class="stat-desc">Average Waiting Room Time</span>
+            </div>
+          </div>
+
+          <div class="glass-btn-row">
+            <a href="#booking-card" class="glass-cta-btn">Book Your Pain-Free Visit &rarr;</a>
+            <span class="glass-call">or call (541) 555-0123</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         VIEW 6: MIDNIGHT SUNRISE (NEW - Luxury Cosmetic Dark Mode)
+         =================================================================== -->
+    <section class="view-panel view-midnight" id="view-midnight">
+      <div class="midnight-radial-glow"></div>
+      <div class="container midnight-relative">
+        <div class="midnight-grid">
+          <div class="midnight-copy">
+            <span class="gold-kicker">COSMETIC & RESTORATIVE EXCELLENCE</span>
+            <h1>The Art of the <span class="gold-shimmer">Radiant Smile.</span></h1>
+            <p>Sunrise Dental Studio delivers high-aesthetic cosmetic smile design in a tranquil private lounge. From hand-crafted porcelain veneers to gentle laser whitening, discover dentistry elevated to fine art.</p>
+
+            <div class="midnight-features-list">
+              <div class="midnight-feat">
+                <span class="feat-star">✦</span>
+                <span>Bespoke Hand-Crafted Veneers</span>
+              </div>
+              <div class="midnight-feat">
+                <span class="feat-star">✦</span>
+                <span>Private VIP Soundproof Suites</span>
+              </div>
+              <div class="midnight-feat">
+                <span class="feat-star">✦</span>
+                <span>In-Office Laser Spa Whitening</span>
+              </div>
+            </div>
+
+            <div class="midnight-btn-group">
+              <a href="#booking-card" class="btn-gold-vip">Request VIP Consultation &rarr;</a>
+              <a href="tel:5415550123" class="btn-dark-outline">Concierge Line (541) 555-0123</a>
+            </div>
+          </div>
+
+          <div class="midnight-card-frame">
+            <div class="midnight-inner-card">
+              <span class="vip-badge">VIP STUDIO PASS</span>
+              <h3>Private Consultation</h3>
+              <p>Meet 1-on-1 with our lead dentist for a comprehensive 3D smile scan and custom aesthetic treatment plan.</p>
+              <div class="vip-divider"></div>
+              <div class="vip-perks">
+                <span>✓ Zero Wait Guarantee</span>
+                <span>✓ 3D Virtual Smile Preview</span>
+                <span>✓ All PPO Insurances Welcomed</span>
+              </div>
+              <a href="#booking-card" class="btn-gold-full">Claim Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================================================================
+         VIEW 7: WARM & PLAIN (Original Eugene Community Layout)
          =================================================================== -->
     <section class="view-panel view-classic" id="view-classic">
       <div class="container">
@@ -489,7 +655,7 @@
 
   </main>
 
-  <!-- MOBILE BOTTOM STICKY BAR (For instant mobile conversions) -->
+  <!-- MOBILE BOTTOM STICKY BAR -->
   <div class="mobile-sticky-bar">
     <a href="tel:5415550123" class="mobile-bar-btn call-btn">
       <span>📞 Call Office</span>
